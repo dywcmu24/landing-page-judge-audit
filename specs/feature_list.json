@@ -1,94 +1,66 @@
 {
-  "product_brief": "FactrAI - an AI news-subscription product that helps everyday readers get past paywalls to access quality journalism.",
-  "variants": [
-    "variant-a",
-    "variant-b",
-    "variant-c"
-  ],
+  "experiment": "landing-page-judge-audit",
+  "manipulated_variable": "evidence_grounding (static_packet vs grounded_packet)",
+  "main_judge": "claude-sonnet-4-5",
+  "criteria_per_page": 6,
+  "ownership_mix": "1 mechanical + 2 semantic + 3 hybrid",
   "criteria": [
     {
-      "id": "S1",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "Page has a <meta name=viewport> tag for mobile responsiveness.",
-      "passes": false
-    },
-    {
-      "id": "S2",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "A primary CTA element (button or link styled as button) exists within the first 700px of vertical scroll (above the fold).",
-      "passes": false
-    },
-    {
-      "id": "S3",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "Page contains exactly one <h1> element.",
-      "passes": false
-    },
-    {
-      "id": "S4",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "Every information-bearing visual has an accessible label: each <img> has non-empty alt, AND each inline <svg> has aria-label or role='img'+<title>, or is explicitly decorative (aria-hidden='true').",
-      "passes": false
-    },
-    {
-      "id": "S5",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "Page includes schema.org structured data (a script[type='application/ld+json'] block).",
-      "passes": false
-    },
-    {
-      "id": "S6",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "There is exactly one primary CTA (one element with class or id containing 'cta-primary').",
-      "passes": false
-    },
-    {
-      "id": "S7",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "At 375px viewport width the page body does not scroll horizontally (no overflow).",
-      "passes": false
-    },
-    {
-      "id": "S8",
-      "type": "structural",
-      "verifier": "playwright",
-      "desc": "Page opens as a standalone file with no external JS or server (no <script src> to remote URLs).",
-      "passes": false
-    },
-    {
       "id": "C1",
-      "type": "copy",
-      "verifier": "evaluator",
-      "desc": "The H1 headline clearly communicates what the product does and for whom, in plain language.",
-      "passes": false
+      "text": "The page includes a viewport meta tag for mobile responsiveness.",
+      "ownership": "mechanical",
+      "evidence_needed": "grep HTML source for <meta name=viewport>",
+      "playwright_check": "presence of meta[name=viewport] in DOM",
+      "static_expectation": "correct — answer is fully in source, grounding adds nothing",
+      "gap_expectation": "none"
     },
     {
       "id": "C2",
-      "type": "copy",
-      "verifier": "evaluator",
-      "desc": "The page presents a single, clear value proposition (not three competing messages).",
-      "passes": false
+      "text": "The primary CTA uses action-oriented copy, not a generic label like 'Submit' or 'Click here'.",
+      "ownership": "semantic",
+      "evidence_needed": "read and judge the CTA wording",
+      "playwright_check": "none — rendering does not help judge phrasing",
+      "static_expectation": "correct — pure semantic, the LLM's home turf",
+      "gap_expectation": "none"
     },
     {
       "id": "C3",
-      "type": "copy",
-      "verifier": "evaluator",
-      "desc": "The primary CTA text is an action phrase (e.g. 'Start free', 'Get the app'), not generic ('Submit', 'Click here').",
-      "passes": false
+      "text": "The headline clearly states a single value proposition and contains no placeholder text.",
+      "ownership": "semantic",
+      "evidence_needed": "read and judge the headline meaning",
+      "playwright_check": "none — rendering does not help judge clarity",
+      "static_expectation": "correct — pure semantic",
+      "gap_expectation": "none"
     },
     {
       "id": "C4",
-      "type": "copy",
-      "verifier": "evaluator",
-      "desc": "No placeholder text remains (no 'lorem ipsum', no 'REPLACE_ME', no TODO).",
-      "passes": false
+      "text": "Testimonial / trust content is actually VISIBLE to a normal visitor (present in DOM is not enough).",
+      "ownership": "hybrid",
+      "evidence_needed": "understand it is testimonial/trust content AND confirm rendered visibility",
+      "playwright_check": "computed style display/visibility, bounding box > 0, element in viewport flow",
+      "static_expectation": "FALSE-PASS — source shows the content present, judge says PASS, but it is display:none / visibility:hidden",
+      "gap_expectation": "large — grounded packet should catch what static misses",
+      "targets_mutation_classes": [4, 2]
+    },
+    {
+      "id": "C5",
+      "text": "Any claim that content is 'shown / comparable / verifiable below' is actually backed by corresponding fields in the DOM.",
+      "ownership": "hybrid",
+      "evidence_needed": "read the copy's promise AND verify the DOM actually delivers it",
+      "playwright_check": "presence and population of the promised section/fields after render",
+      "static_expectation": "FALSE-PASS — judge trusts the copy claim, but the backing fields are missing",
+      "gap_expectation": "large",
+      "targets_mutation_classes": [3, 1]
+    },
+    {
+      "id": "C6",
+      "text": "The primary CTA is actually visible in the mobile first-screen viewport, not obscured.",
+      "ownership": "hybrid",
+      "evidence_needed": "understand it is the primary CTA AND confirm its rendered position in the mobile viewport",
+      "playwright_check": "bounding box vs mobile viewport, not covered by sticky/overlay elements",
+      "static_expectation": "FALSE-PASS — source has the CTA above fold, judge says PASS, but mobile render hides it behind a sticky header",
+      "gap_expectation": "large",
+      "targets_mutation_classes": [6, 5]
     }
   ]
 }
