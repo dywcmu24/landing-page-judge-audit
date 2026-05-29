@@ -1,6 +1,6 @@
 [
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C1",
     "ownership": "mechanical",
@@ -9,7 +9,7 @@
     "confidence": 100
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C1",
     "ownership": "mechanical",
@@ -18,7 +18,7 @@
     "confidence": 100
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C2",
     "ownership": "semantic",
@@ -27,7 +27,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C2",
     "ownership": "semantic",
@@ -36,7 +36,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C3",
     "ownership": "semantic",
@@ -45,7 +45,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C3",
     "ownership": "semantic",
@@ -54,7 +54,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C4",
     "ownership": "hybrid",
@@ -63,7 +63,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C4",
     "ownership": "hybrid",
@@ -72,7 +72,7 @@
     "confidence": 100
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C5",
     "ownership": "hybrid",
@@ -81,16 +81,16 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C5",
     "ownership": "hybrid",
     "packet": "grounded",
-    "verdict": "PASS",
+    "verdict": "FAIL",
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C6",
     "ownership": "hybrid",
@@ -99,16 +99,16 @@
     "confidence": 85
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "clean",
     "criterion": "C6",
     "ownership": "hybrid",
     "packet": "grounded",
-    "verdict": "PASS",
-    "confidence": 85
+    "verdict": "FAIL",
+    "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C1",
     "ownership": "mechanical",
@@ -117,7 +117,7 @@
     "confidence": 100
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C1",
     "ownership": "mechanical",
@@ -126,7 +126,7 @@
     "confidence": 100
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C2",
     "ownership": "semantic",
@@ -135,7 +135,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C2",
     "ownership": "semantic",
@@ -144,7 +144,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C3",
     "ownership": "semantic",
@@ -153,7 +153,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C3",
     "ownership": "semantic",
@@ -162,34 +162,34 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C4",
-    "ownership": "hybrid",
-    "packet": "static",
-    "verdict": "FAIL",
-    "confidence": 100
-  },
-  {
-    "base": "base-01",
-    "variant": "mutated",
-    "criterion": "C4",
-    "ownership": "hybrid",
-    "packet": "grounded",
-    "verdict": "FAIL",
-    "confidence": 100
-  },
-  {
-    "base": "base-01",
-    "variant": "mutated",
-    "criterion": "C5",
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
+    "variant": "mutated",
+    "criterion": "C4",
+    "ownership": "hybrid",
+    "packet": "grounded",
+    "verdict": "PASS",
+    "confidence": 100
+  },
+  {
+    "base": "base-03",
+    "variant": "mutated",
+    "criterion": "C5",
+    "ownership": "hybrid",
+    "packet": "static",
+    "verdict": "FAIL",
+    "confidence": 95
+  },
+  {
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C5",
     "ownership": "hybrid",
@@ -198,7 +198,7 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C6",
     "ownership": "hybrid",
@@ -207,12 +207,12 @@
     "confidence": 95
   },
   {
-    "base": "base-01",
+    "base": "base-03",
     "variant": "mutated",
     "criterion": "C6",
     "ownership": "hybrid",
     "packet": "grounded",
-    "verdict": "PASS",
-    "confidence": 85
+    "verdict": "FAIL",
+    "confidence": 95
   }
 ]
