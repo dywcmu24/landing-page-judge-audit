@@ -105,7 +105,7 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 95
   },
   {
     "base": "base-01",
@@ -194,7 +194,7 @@
     "criterion": "C5",
     "ownership": "hybrid",
     "packet": "grounded",
-    "verdict": "PASS",
+    "verdict": "FAIL",
     "confidence": 95
   },
   {
@@ -204,7 +204,7 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 95
   },
   {
     "base": "base-01",
