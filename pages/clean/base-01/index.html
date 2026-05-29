@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kards Unlimited - Your Neighborhood Gift & Card Shop Since 1968</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fefdfb;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #4a7c7e;
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .est {
+            font-size: 0.5em;
+            font-weight: normal;
+            display: block;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 1em;
+            transition: opacity 0.3s;
+        }
+        nav a:hover {
+            opacity: 0.8;
+        }
+        .hero {
+            background: linear-gradient(135deg, #f9d5a7 0%, #f4a7b9 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.8em;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            line-height: 1.2;
+            font-weight: normal;
+        }
+        .hero-subtitle {
+            font-size: 1.3em;
+            color: #555;
+            margin-bottom: 35px;
+            font-style: italic;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #e85d75;
+            color: #fff;
+            padding: 18px 45px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(232, 93, 117, 0.3);
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .cta-button:hover {
+            background-color: #d64961;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(232, 93, 117, 0.4);
+        }
+        .about {
+            padding: 70px 20px;
+            background-color: #fff;
+        }
+        .about h2 {
+            font-size: 2.2em;
+            color: #4a7c7e;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: normal;
+        }
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .about-text p {
+            margin-bottom: 20px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .offerings {
+            padding: 70px 20px;
+            background-color: #f8f5f0;
+        }
+        .offerings h2 {
+            font-size: 2.2em;
+            color: #4a7c7e;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: normal;
+        }
+        .offerings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .offering-card {
+            background: #fff;
+            padding: 35px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        .offering-card:hover {
+            transform: translateY(-5px);
+        }
+        .offering-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .offering-card h3 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        .offering-card p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .testimonials {
+            padding: 70px 20px;
+            background-color: #4a7c7e;
+            color: #fff;
+        }
+        .testimonials h2 {
+            font-size: 2.2em;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: normal;
+            color: #fff;
+        }
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 35px;
+            margin-top: 40px;
+        }
+        .testimonial-card {
+            background: rgba(255,255,255,0.1);
+            padding: 35px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .testimonial-text {
+            font-size: 1.1em;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .testimonial-author {
+            font-weight: bold;
+            font-size: 1em;
+            color: #f9d5a7;
+        }
+        .location {
+            padding: 70px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .location h2 {
+            font-size: 2.2em;
+            color: #4a7c7e;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        .location-details {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .location-image {
+            margin-top: 40px;
+        }
+        .location-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-content {
+            font-size: 1em;
+        }
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 15px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    Kards Unlimited
+                    <span class="est">EST. 1968</span>
+                </div>
+                <nav>
+                    <a href="#about">About</a>
+                    <a href="#offerings">What We Offer</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#location">Visit Us</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Where Every Card Tells a Story and Every Gift Feels Personal</h1>
+            <p class="hero-subtitle">Your neighborhood treasure trove of hand-picked cards, gifts & books since 1968</p>
+            <a href="#location" class="cta-button">Visit Us on Walnut Street</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Welcome to Our Little Corner of Shadyside</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>For over 55 years, Kards Unlimited has been the heart of Shadyside's Walnut Street, tucked between the coffee shops and boutiques you love. We're not just a card shop—we're the place where you find that <em>perfect</em> something that makes someone's day.</p>
+                    <p>Step inside and you'll discover shelves brimming with quirky greeting cards, thoughtfully curated gifts, engaging books, and charming stationery. Every item in our shop is hand-picked with love, because we believe that the small details matter most.</p>
+                    <p>Whether you're celebrating a birthday, saying thank you, or just looking for a little pick-me-up, we're here to help you find exactly what you didn't know you were looking for. That's the Kards Unlimited magic.</p>
+                </div>
+                <div class="about-image">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect fill='%23f9d5a7' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-size='20' fill='%234a7c7e'%3EKards Unlimited%3C/text%3E%3Ctext x='50%25' y='60%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-size='14' fill='%234a7c7e'%3EShadyside Storefront%3C/text%3E%3Crect x='80' y='80' width='60' height='80' fill='%234a7c7e' opacity='0.3'/%3E%3Crect x='160' y='80' width='60' height='80' fill='%23e85d75' opacity='0.3'/%3E%3Crect x='240' y='80' width='60' height='80' fill='%234a7c7e' opacity='0.3'/%3E%3C/svg%3E" alt="Colorful storefront of Kards Unlimited shop on Walnut Street showing display windows with cards and gifts">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offerings" class="offerings">
+        <div class="container">
+            <h2>What You'll Find Inside</h2>
+            <div class="offerings-grid">
+                <div class="offering-card">
+                    <div class="offering-icon">💌</div>
+                    <h3>Greeting Cards</h3>
+                    <p>From laugh-out-loud funny to tenderly sentimental, we carry cards from independent artists and beloved brands. Whatever the occasion, we've got the perfect words.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🎁</div>
+                    <h3>Unique Gifts</h3>
+                    <p>Candles, jewelry, quirky home décor, and delightful surprises. Each gift is chosen because it made us smile—and we know it'll make you smile too.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">📚</div>
+                    <h3>Books & Journals</h3>
+                    <p>Curated reads, beautiful journals, and inspiring titles that beg to be browsed. Perfect for book lovers and daydreamers alike.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">✉️</div>
+                    <h3>Stationery & Paper Goods</h3>
+                    <p>Lovely notecards, elegant stationery, and paper products that make writing by hand feel special again. Because some things deserve more than a text.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Neighbors Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Kards Unlimited is my absolute favorite shop in Pittsburgh. I've been coming here for 20 years, and they never disappoint. The staff knows me by name and always helps me find the perfect card. It's like visiting an old friend."</p>
+                    <p class="testimonial-author">— Margaret Chen, Shadyside Resident</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I stumbled in looking for a birthday card and left with a card, a gorgeous candle, and a book I couldn't put down. This place is dangerous for my wallet but wonderful for my soul!"</p>
+                    <p class="testimonial-author">— David Rodriguez, Squirrel Hill</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Where else can you find such a thoughtfully curated collection? Every time I need a gift that feels personal and special, Kards Unlimited comes through. A true Shadyside gem."</p>
+                    <p class="testimonial-author">— Sarah O'Brien, Point Breeze</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location">
+        <div class="container">
+            <h2>Come Visit Us</h2>
+            <p class="location-details"><strong>📍 Walnut Street, Shadyside, Pittsburgh</strong></p>
+            <p class="location-details">Serving the neighborhood since 1968</p>
+            <p class="location-details" style="margin-top: 25px;">Stop by and browse at your leisure. We're here to help you find something wonderful.</p>
+            <div class="location-image">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 200'%3E%3Crect fill='%23f8f5f0' width='600' height='200'/%3E%3Cpath fill='%234a7c7e' d='M50,150 L100,150 L100,80 L50,80 Z M150,150 L200,150 L200,80 L150,80 Z M250,150 L300,150 L300,80 L250,80 Z M350,150 L400,150 L400,80 L350,80 Z M450,150 L500,150 L500,80 L450,80 Z'/%3E%3Crect x='60' y='90' width='30' height='50' fill='%23f9d5a7'/%3E%3Crect x='160' y='90' width='30' height='50' fill='%23f4a7b9'/%3E%3Crect x='260' y='90' width='30' height='50' fill='%23f9d5a7'/%3E%3Crect x='360' y='90' width='30' height='50' fill='%23e85d75'/%3E%3Crect x='460' y='90' width='30' height='50' fill='%23f9d5a7'/%3E%3Ctext x='300' y='30' text-anchor='middle' font-family='Georgia, serif' font-size='18' fill='%234a7c7e'%3EWalnut Street, Shadyside%3C/text%3E%3C/svg%3E" alt="Illustrated map showing Kards Unlimited location on Walnut Street in Shadyside among other neighborhood shops">
+            </div>
+            <div style="margin-top: 40px;">
+                <a href="#about" class="cta-button">Explore What Makes Us Special</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p><strong>Kards Unlimited</strong></p>
+                <p>Walnut Street, Shadyside, Pittsburgh, PA</p>
+                <p>Proudly serving our neighborhood since 1968</p>
+                <p style="margin-top: 20px;">© 2024 Kards Unlimited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

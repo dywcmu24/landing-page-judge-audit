@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Idea Shops - Home, Garden & Fine Jewelry Boutique on Walnut St</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fdfbf7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #2c5f4f 0%, #4a7c6a 100%);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: normal;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .tagline {
+            font-size: 0.95em;
+            opacity: 0.9;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+        .hero {
+            background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%23e8e4dc" width="100" height="100"/><circle cx="50" cy="50" r="30" fill="%23d4cfc4"/></svg>');
+            padding: 80px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c5f4f;
+            margin-bottom: 30px;
+            font-weight: normal;
+            line-height: 1.3;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #c9a962;
+            color: #fff;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .cta-button:hover {
+            background-color: #b89650;
+        }
+        .about {
+            padding: 70px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2em;
+            color: #2c5f4f;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        .about p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 25px;
+            line-height: 1.8;
+            color: #555;
+        }
+        .offerings {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .offering-card {
+            background: #fdfbf7;
+            padding: 35px 25px;
+            border: 1px solid #e8e4dc;
+            text-align: center;
+            transition: box-shadow 0.3s ease;
+        }
+        .offering-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .offering-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .offering-card h3 {
+            font-size: 1.4em;
+            color: #2c5f4f;
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        .offering-card p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        .testimonial {
+            background: linear-gradient(135deg, #4a7c6a 0%, #2c5f4f 100%);
+            color: #fff;
+            padding: 70px 20px;
+            text-align: center;
+        }
+        .testimonial h2 {
+            font-size: 2em;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .testimonial-text {
+            font-size: 1.2em;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+        .testimonial-author {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .testimonial-location {
+            font-size: 0.9em;
+            opacity: 0.85;
+        }
+        .credentials-intro {
+            text-align: center;
+            padding: 60px 20px 20px;
+            background-color: #fff;
+            font-size: 1.1em;
+            color: #555;
+            font-style: italic;
+        }
+        .credentials {
+            padding: 30px 20px 70px;
+            background-color: #fff;
+        }
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .credential {
+            background: #fdfbf7;
+            border: 1px solid #e8e4dc;
+            padding: 25px 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .credential:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+        .credential-name {
+            font-size: 1.1em;
+            color: #2c5f4f;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .credential-issuer {
+            font-size: 0.9em;
+            color: #777;
+            font-style: italic;
+        }
+        .location-section {
+            background-color: #fdfbf7;
+            padding: 70px 20px;
+            text-align: center;
+        }
+        .location-section h2 {
+            font-size: 2em;
+            color: #2c5f4f;
+            margin-bottom: 30px;
+            font-weight: normal;
+        }
+        .location-content {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
+        }
+        .address {
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #2c5f4f;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #2c5f4f;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        footer p {
+            opacity: 0.9;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            .hero {
+                padding: 50px 20px;
+            }
+            .about h2, .testimonial h2, .location-section h2 {
+                font-size: 1.6em;
+            }
+            .offerings {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">The Idea Shops</div>
+            <div class="tagline">Walnut Street's Curated Boutique</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Discover Extraordinary Gifts That Transform Houses into Homes</h1>
+            <a href="#visit" class="cta-button">Visit Our Boutique Today</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>A Carefully Curated Collection</h2>
+            <p>The Idea Shops is Walnut Street's premier destination for discerning tastes. We specialize in thoughtfully selected home décor, garden accents, and fine jewelry that elevate everyday living into something truly special.</p>
+            <p>For over two decades, we've been helping our community find that perfect piece—whether you're celebrating a milestone, refreshing your living space, or seeking a gift that genuinely speaks to the heart.</p>
+            
+            <div class="offerings">
+                <div class="offering-card">
+                    <div class="offering-icon">🏡</div>
+                    <h3>Home Décor</h3>
+                    <p>Artisan furnishings, elegant textiles, and designer accents that bring warmth and sophistication to every room.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">🌿</div>
+                    <h3>Garden & Outdoor</h3>
+                    <p>Distinctive planters, ornamental pieces, and curated garden accessories for outdoor spaces that inspire.</p>
+                </div>
+                <div class="offering-card">
+                    <div class="offering-icon">💎</div>
+                    <h3>Fine Jewelry</h3>
+                    <p>Exquisite pieces from renowned designers, from everyday elegance to heirloom-quality statement jewelry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-content">
+                <p class="testimonial-text">"The Idea Shops is my go-to for every special occasion. The staff truly understands quality and helps me find pieces that feel personal and timeless. I recently found the perfect anniversary necklace here—my wife was moved to tears. You simply won't find this level of curation anywhere else in the area."</p>
+                <div class="testimonial-author">Margaret Chen</div>
+                <div class="testimonial-location">Long-time Walnut Street Resident</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="credentials-intro">
+        <div class="container">
+            <p>Certified premium-brand dealer — see credentials below</p>
+        </div>
+    </div>
+
+    <section class="credentials">
+        <div class="container">
+            <div class="credentials-grid">
+                <div class="credential"></div>
+                <div class="credential"></div>
+                <div class="credential"></div>
+                <div class="credential"></div>
+                <div class="credential"></div>
+                <div class="credential"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section" id="visit">
+        <div class="container">
+            <h2>Visit Us on Walnut Street</h2>
+            <div class="location-content">
+                <p>Experience our full collection in person. Our knowledgeable staff is here to help you find exactly what you're looking for—or discover something you never knew you needed.</p>
+                <div class="address">The Idea Shops<br>242 Walnut Street</div>
+                <p><strong>Hours:</strong> Tuesday–Saturday 10am–6pm | Sunday 12pm–5pm</p>
+                <p style="margin-top: 30px;">
+                    <a href="#visit" class="cta-button">Plan Your Visit</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 The Idea Shops. All rights reserved.</p>
+            <p style="margin-top: 10px;">242 Walnut Street | (555) 847-2900</p>
+        </div>
+    </footer>
+</body>
+</html>

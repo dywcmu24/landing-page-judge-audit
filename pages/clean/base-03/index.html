@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maser Galleries - Fine Art & Custom Framing Since 1974</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Garamond', 'Georgia', serif;
+            line-height: 1.7;
+            color: #2a2a2a;
+            background-color: #fafaf8;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #f5f5f0;
+            padding: 20px 0;
+            border-bottom: 3px solid #8b7355;
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+        .established {
+            font-size: 0.9em;
+            color: #8b7355;
+            letter-spacing: 1px;
+        }
+        .hero {
+            background: linear-gradient(rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.4)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23c9b896" width="1200" height="600"/><rect fill="%23a89878" x="100" y="100" width="300" height="400"/><rect fill="%23d4c4a8" x="450" y="150" width="280" height="350"/><rect fill="%23b5a186" x="800" y="120" width="320" height="380"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 120px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            font-weight: 300;
+            margin-bottom: 30px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero-subtitle {
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            font-weight: 300;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #8b7355;
+            color: #fff;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-size: 1.1em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            border: 2px solid #8b7355;
+        }
+        .cta-button:hover {
+            background-color: #6d5a43;
+            border-color: #6d5a43;
+        }
+        .about {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        .about h2 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #1a1a1a;
+        }
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+            align-items: center;
+        }
+        .about-text {
+            font-size: 1.1em;
+            color: #3a3a3a;
+        }
+        .about-text p {
+            margin-bottom: 20px;
+        }
+        .about-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #8b7355 0%, #a89878 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .services {
+            padding: 80px 0;
+            background-color: #f5f5f0;
+        }
+        .services h2 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .service-item {
+            text-align: center;
+            padding: 40px 30px;
+            background-color: #fff;
+            border: 1px solid #d4c4a8;
+        }
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 25px;
+            background-color: #8b7355;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .service-item h3 {
+            font-size: 1.5em;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+        .service-item p {
+            color: #5a5a5a;
+            line-height: 1.8;
+        }
+        .testimonials {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+            color: #f5f5f0;
+        }
+        .testimonials h2 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .testimonial {
+            padding: 35px;
+            background-color: #2a2a2a;
+            border-left: 3px solid #8b7355;
+        }
+        .testimonial-text {
+            font-size: 1.1em;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .testimonial-author {
+            font-size: 0.95em;
+            color: #8b7355;
+            text-align: right;
+        }
+        .artists {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        .artists h2 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .artist-intro {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 50px;
+            color: #5a5a5a;
+        }
+        .artist-roster {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .artist-card {
+            padding: 30px;
+            background-color: #fafaf8;
+            border: 1px solid #e5e5e0;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .artist-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .artist-image {
+            width: 100%;
+            height: 200px;
+            background-color: #d4c4a8;
+            margin-bottom: 20px;
+        }
+        .artist-name {
+            font-size: 1.3em;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+        .artist-medium {
+            font-size: 0.95em;
+            color: #6a6a6a;
+            font-style: italic;
+        }
+        .location {
+            padding: 80px 0;
+            background-color: #f5f5f0;
+        }
+        .location h2 {
+            font-size: 2.5em;
+            font-weight: 300;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+        .location-info {
+            font-size: 1.1em;
+        }
+        .location-info p {
+            margin-bottom: 15px;
+        }
+        .location-info strong {
+            display: block;
+            font-size: 1.2em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 350px;
+            background-color: #d4c4a8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            color: #5a5a5a;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #f5f5f0;
+            padding: 40px 0;
+            text-align: center;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+            .about-content,
+            .location-content {
+                grid-template-columns: 1fr;
+            }
+            .artist-roster {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Maser Galleries</div>
+                <div class="established">Est. 1974 • Walnut Street</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Where Distinguished Art Meets Masterful Framing</h1>
+            <p class="hero-subtitle">Philadelphia's Premier Destination for Fine Art & Custom Conservation Framing</p>
+            <a href="#contact" class="cta-button">Schedule Your Consultation</a>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>A Philadelphia Institution</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Since 1974, Maser Galleries has been a cornerstone of Philadelphia's vibrant art community on historic Walnut Street. For nearly five decades, we have curated exceptional collections and provided museum-quality custom framing services to discerning collectors, institutions, and artists.</p>
+                    <p>Our gallery represents both established and emerging artists across diverse media, from contemporary paintings and sculpture to photography and works on paper. Each piece in our collection is carefully selected to reflect our commitment to artistic excellence and cultural significance.</p>
+                    <p>Our conservation-grade custom framing studio employs master framers with decades of experience, utilizing archival materials and techniques to preserve and enhance your most treasured artworks and heirlooms.</p>
+                </div>
+                <div class="about-image">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'><rect fill='%23a89878' width='600' height='400'/><rect fill='%231a1a1a' x='50' y='50' width='200' height='300'/><rect fill='%23d4c4a8' x='70' y='70' width='160' height='200'/><rect fill='%231a1a1a' x='300' y='100' width='250' height='250'/><rect fill='%23c9b896' x='320' y='120' width='210' height='180'/></svg>" alt="Interior view of Maser Galleries showing framed artwork displayed on gallery walls with professional lighting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect fill='%23fff' x='15' y='15' width='50' height='50'/><rect fill='%23f5f5f0' x='20' y='20' width='40' height='35'/></svg>" alt="Icon representing fine art gallery">
+                    </div>
+                    <h3>Fine Art Gallery</h3>
+                    <p>Rotating exhibitions featuring contemporary and modern works from our carefully curated roster of nationally and internationally recognized artists.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect fill='%23fff' x='10' y='10' width='60' height='60' stroke='%23f5f5f0' stroke-width='3'/><rect fill='%23f5f5f0' x='20' y='20' width='40' height='40'/></svg>" alt="Icon representing custom framing">
+                    </div>
+                    <h3>Custom Framing</h3>
+                    <p>Museum-quality, conservation-grade framing using archival materials. Our master framers work with you to design the perfect presentation for each piece.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><circle fill='%23fff' cx='40' cy='40' r='30'/><circle fill='%23f5f5f0' cx='40' cy='40' r='20'/></svg>" alt="Icon representing art consultation">
+                    </div>
+                    <h3>Art Consultation</h3>
+                    <p>Expert guidance for private collectors and corporate clients. We assist with acquisitions, collection development, and installation services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <p class="testimonial-text">"Maser Galleries has been framing our family's collection for over twenty years. Their attention to detail and commitment to preservation is unmatched in Philadelphia."</p>
+                    <p class="testimonial-author">— Margaret Whitfield, Private Collector</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"As an artist, finding a gallery that truly understands and champions your work is rare. Maser Galleries has been an exceptional partner in my career."</p>
+                    <p class="testimonial-author">— Robert Chen, Represented Artist</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">"The expertise and professionalism at Maser Galleries is extraordinary. They transformed our corporate collection and provided invaluable curatorial insight."</p>
+                    <p class="testimonial-author">— David Kensington, Kensington & Associates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="artists">
+        <div class="container">
+            <h2>Our Artists</h2>
+            <p class="artist-intro">See our full artist roster below</p>
+            <div class="artist-roster">
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23c9b896' width='250' height='200'/><circle fill='%238b7355' cx='125' cy='100' r='40'/></svg>" alt="Abstract artwork sample by Catherine Bordeaux">
+                    </div>
+                    <div class="artist-name">Catherine Bordeaux</div>
+                    <div class="artist-medium">Oil & Mixed Media</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23a89878' width='250' height='200'/><rect fill='%235a5a5a' x='50' y='40' width='150' height='120'/></svg>" alt="Contemporary sculpture work by James Rothwell">
+                    </div>
+                    <div class="artist-name">James Rothwell</div>
+                    <div class="artist-medium">Sculpture</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23d4c4a8' width='250' height='200'/><polygon fill='%236d5a43' points='125,40 200,160 50,160'/></svg>" alt="Modern geometric painting by Elena Vasquez">
+                    </div>
+                    <div class="artist-name">Elena Vasquez</div>
+                    <div class="artist-medium">Acrylic on Canvas</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23b5a186' width='250' height='200'/><line x1='50' y1='50' x2='200' y2='150' stroke='%231a1a1a' stroke-width='3'/><line x1='200' y1='50' x2='50' y2='150' stroke='%231a1a1a' stroke-width='3'/></svg>" alt="Fine art photography by Michael Chang">
+                    </div>
+                    <div class="artist-name">Michael Chang</div>
+                    <div class="artist-medium">Photography</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23c9b896' width='250' height='200'/><ellipse fill='%238b7355' cx='125' cy='100' rx='80' ry='50'/></svg>" alt="Abstract expressionist work by Sarah Hoffman">
+                    </div>
+                    <div class="artist-name">Sarah Hoffman</div>
+                    <div class="artist-medium">Abstract Expressionism</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23a89878' width='250' height='200'/><rect fill='%23d4c4a8' x='60' y='50' width='130' height='100'/></svg>" alt="Watercolor landscape by Thomas Brennan">
+                    </div>
+                    <div class="artist-name">Thomas Brennan</div>
+                    <div class="artist-medium">Watercolor</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23d4c4a8' width='250' height='200'/><circle fill='%236d5a43' cx='80' cy='80' r='25'/><circle fill='%236d5a43' cx='170' cy='120' r='30'/></svg>" alt="Contemporary mixed media piece by Nia Johnson">
+                    </div>
+                    <div class="artist-name">Nia Johnson</div>
+                    <div class="artist-medium">Mixed Media</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23b5a186' width='250' height='200'/><path fill='%231a1a1a' d='M50,150 Q125,50 200,150'/></svg>" alt="Minimalist painting by David Morrison">
+                    </div>
+                    <div class="artist-name">David Morrison</div>
+                    <div class="artist-medium">Oil on Linen</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23c9b896' width='250' height='200'/><rect fill='%235a5a5a' x='70' y='60' width='40' height='80'/><rect fill='%235a5a5a' x='140' y='60' width='40' height='80'/></svg>" alt="Printmaking work by Rachel Goldstein">
+                    </div>
+                    <div class="artist-name">Rachel Goldstein</div>
+                    <div class="artist-medium">Printmaking</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23a89878' width='250' height='200'/><polygon fill='%238b7355' points='125,50 175,100 125,150 75,100'/></svg>" alt="Contemporary abstract work by Marcus Sterling">
+                    </div>
+                    <div class="artist-name">Marcus Sterling</div>
+                    <div class="artist-medium">Collage & Assemblage</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23d4c4a8' width='250' height='200'/><circle fill='%23c9b896' cx='125' cy='100' r='60' stroke='%231a1a1a' stroke-width='2' fill='none'/></svg>" alt="Figurative painting by Alexandra Petrov">
+                    </div>
+                    <div class="artist-name">Alexandra Petrov</div>
+                    <div class="artist-medium">Figurative Painting</div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 250 200'><rect fill='%23b5a186' width='250' height='200'/><rect fill='%238b7355' x='80' y='60' width='90' height='80' transform='rotate(15 125 100)'/></svg>" alt="Contemporary ceramics by Kenji Yamamoto">
+                    </div>
+                    <div class="artist-name">Kenji Yamamoto</div>
+                    <div class="artist-medium">Ceramics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="contact">
+        <div class="container">
+            <h2>Visit Us</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <p>For nearly fifty years, we have welcomed collectors, artists, and art enthusiasts to our Walnut Street location in the heart of Philadelphia's cultural district.</p>
+                    <p>Whether you're seeking a statement piece for your collection, require expert framing services, or simply wish to experience our current exhibition, we invite you to visit.</p>
+                    
+                    <strong>Maser Galleries</strong>
+                    <p>1847 Walnut Street<br>
+                    Philadelphia, PA 19103</p>
+                    
+                    <strong>Gallery Hours</strong>
+                    <p>Tuesday – Friday: 10:00 AM – 6:00 PM<br>
+                    Saturday: 11:00 AM – 5:00 PM<br>
+                    Sunday & Monday: By Appointment</p>
+                    
+                    <strong>Contact</strong>
+                    <p>Phone: (215) 555-1974<br>
+                    Email: inquiries@masergalleries.com</p>
+                </div>
+                <div class="map-placeholder">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 350'><rect fill='%23d4c4a8' width='600' height='350'/><rect fill='%23a89878' x='50' y='50' width='500' height='250'/><circle fill='%238b7355' cx='300' cy='175' r='40'/><text x='300' y='270' text-anchor='middle' font-size='20' fill='%231a1a1a' font-family='Georgia'>Walnut Street, Philadelphia</text></svg>" alt="Map showing Maser Galleries location on Walnut Street in Philadelphia">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Maser Galleries. All Rights Reserved.</p>
+            <p>Serving Philadelphia's Art Community Since 1974</p>
+        </div>
+    </footer>
+</body>
+</html>

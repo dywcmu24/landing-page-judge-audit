@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadyside Variety Store - Where Wonder Lives</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe8f0 100%);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #6c5b7b 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .location {
+            font-size: 0.9em;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><circle cx="100" cy="100" r="30" fill="%23ffeb3b" opacity="0.3"/><circle cx="300" cy="250" r="40" fill="%23ff5722" opacity="0.3"/><circle cx="500" cy="150" r="35" fill="%234caf50" opacity="0.3"/><circle cx="700" cy="300" r="45" fill="%232196f3" opacity="0.3"/><circle cx="900" cy="180" r="38" fill="%23e91e63" opacity="0.3"/><circle cx="1100" cy="220" r="42" fill="%239c27b0" opacity="0.3"/><polygon points="200,50 220,90 180,90" fill="%23ff9800" opacity="0.4"/><polygon points="600,280 630,340 570,340" fill="%23cddc39" opacity="0.4"/><polygon points="1000,80 1025,130 975,130" fill="%2300bcd4" opacity="0.4"/></svg>') center top no-repeat;
+            background-size: contain;
+        }
+        h1 {
+            font-size: 3em;
+            color: #6c5b7b;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(255,107,157,0.3);
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            color: #c06c84;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+            color: white;
+            padding: 18px 45px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 6px 20px rgba(255,107,157,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 3px solid #fff;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255,107,157,0.6);
+        }
+        .press-badge {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 10px 25px;
+            background: white;
+            border: 2px dashed #c06c84;
+            border-radius: 10px;
+            font-style: italic;
+            color: #6c5b7b;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .about-section {
+            background: white;
+            padding: 60px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about-content h2 {
+            color: #6c5b7b;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .about-content p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+            padding: 0 20px;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            color: #c06c84;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        .testimonials {
+            background: linear-gradient(135deg, #ffeef5 0%, #fff9e6 100%);
+            padding: 60px 20px;
+            margin: 40px 0;
+        }
+        .testimonials h2 {
+            text-align: center;
+            color: #6c5b7b;
+            font-size: 2.2em;
+            margin-bottom: 40px;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .testimonial-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #ff6b9d;
+        }
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05em;
+        }
+        .testimonial-author {
+            font-weight: bold;
+            color: #c06c84;
+            text-align: right;
+        }
+        .stars {
+            color: #ffc107;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #6c5b7b;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .footer-content h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        .footer-content p {
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .subtitle {
+                font-size: 1.1em;
+            }
+            .cta-button {
+                font-size: 1.1em;
+                padding: 15px 35px;
+            }
+            .header-content {
+                justify-content: center;
+                text-align: center;
+            }
+            .location {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">✨ Shadyside Variety Store ✨</div>
+                <div class="location">📍 Walnut & Copeland</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Rediscover the Magic of Wonder & Play</h1>
+            <p class="subtitle">Step into our whimsical world of toys, trinkets, and treasures that spark joy in kids from 1 to 101!</p>
+            <a href="#visit" class="cta-button">Come Play With Us!</a>
+            <div class="press-badge">⭐ As Featured in Pittsburgh Magazine ⭐</div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Your Neighborhood Treasure Trove</h2>
+                <p>Shadyside Variety Store is a whimsical toy and novelty gift shop nestled right in the heart of Shadyside at Walnut & Copeland. We're not just a store—we're a portal back to the pure delight of discovering something unexpected and wonderful.</p>
+                <p>From classic toys that bring back your childhood memories to quirky gifts that make everyone giggle, our carefully curated collection celebrates the playful spirit in all of us. Whether you're hunting for the perfect birthday present, a unique conversation starter, or just want to treat yourself to something delightful, we've got shelves packed with possibilities.</p>
+                <p>Every corner is bursting with colorful surprises: vintage-inspired wind-up toys, puzzles that challenge and delight, whimsical greeting cards, nostalgic candy, silly putty, magic tricks, and novelties you won't find anywhere else. Come get lost in the fun!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🎪</div>
+                <h3>Classic Toys</h3>
+                <p>Wind-up robots, yo-yos, jacks, and timeless games that never go out of style</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎁</div>
+                <h3>Quirky Gifts</h3>
+                <p>Unique novelties and conversation starters for every personality and occasion</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🍬</div>
+                <h3>Nostalgic Candy</h3>
+                <p>Sweet treats that transport you straight back to your childhood memories</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Creative Play</h3>
+                <p>Art supplies, craft kits, and imagination-sparking goodies for all ages</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Happy Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"This place is pure magic! My kids begged to come back before we even left. I found the perfect gag gift for my brother AND relived my own childhood with a classic slinky. You can't leave without smiling!"</p>
+                    <p class="testimonial-author">— Sarah M., Shadyside</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"I'm a grandma who loves spoiling my grandkids, and Shadyside Variety Store is my secret weapon. The staff actually know their inventory and help me find age-appropriate treasures every time. A true neighborhood gem!"</p>
+                    <p class="testimonial-author">— Dorothy K., Point Breeze</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Finally, a place that celebrates FUN! I bought silly putty, a vintage-style puzzle, and a rubber chicken (don't ask). My friends thought I was crazy until I showed up to game night with the best ice-breakers ever. 10/10 would impulse-buy again!"</p>
+                    <p class="testimonial-author">— Mike T., Squirrel Hill</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="visit">
+        <div class="footer-content">
+            <h3>Visit Us Today!</h3>
+            <p><strong>Shadyside Variety Store</strong></p>
+            <p>Corner of Walnut & Copeland</p>
+            <p>Shadyside, Pittsburgh, PA</p>
+            <p style="margin-top: 20px;">🕐 Open Daily: Mon-Sat 10am-7pm, Sun 11am-5pm</p>
+            <p>📞 (412) 555-TOYS</p>
+            <p style="margin-top: 20px; font-size: 0.9em;">Follow your curiosity. Find your joy. We can't wait to see you!</p>
+        </div>
+    </footer>
+</body>
+</html>
