@@ -92,12 +92,19 @@ model change, harness, data, or infrastructure issue." I hit one of each:
 
 ## Pipeline
 generate_pair.py     two-call LLM surgical mutation
+
 check_pair.py        per-base diff-budget gate
+
 ground.py            Playwright observation pipeline (mobile viewport, 9-pt
 occlusion sampling, ancestor-chain visibility, broken
 image and empty container detection)
+
 judge.py             the LLM judge under audit; captures verdict, confidence,
 rationale across both packets
+
+summarize_grounding.py            One-liner summary of `ground.py` output. 
+Used to verify each mutation surfaces a Playwright-observable signal before spending API calls on judge.py.
+
 collect_verdicts.py  pandas aggregation; false-pass rate restricted to each
 base's target criterionAll judgments via the native Anthropic Python SDK with per-script spend caps.
 
