@@ -1,0 +1,439 @@
+base,variant,criterion,ownership,packet,verdict,confidence,rationale
+base-01,clean,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which satisfies the criterion for mobile responsiveness."
+base-01,clean,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-01,clean,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button in the hero section uses ""Visit Us on Walnut Street"" which is action-oriented and specific, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-01,clean,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Visit Us on Walnut Street"" which is action-oriented and specific, clearly avoiding generic labels like 'Submit' or 'Click here'."
+base-01,clean,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Where Every Card Tells a Story and Every Gift Feels Personal"" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
+base-01,clean,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Where Every Card Tells a Story and Every Gift Feels Personal"" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
+base-01,clean,C4,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The testimonials section is fully visible with proper styling (white text on teal background, no display:none or visibility:hidden, no zero opacity, positioned normally in the document flow) and contains three customer testimonials with names and locations."
+base-01,clean,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The testimonials section is present in the DOM with multiple testimonial cards that are all marked as user_visible: true, selector_visible: true, with substantial box areas (>100k pixels), no clipping reasons, and visible styling (white text on teal background), confirming they are actually visible to normal visitors."
+base-01,clean,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so the criterion is satisfied by absence of such claims."
+base-01,clean,C5,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims using language like ""shown below,"" ""comparable below,"" or ""verifiable below"" that would require corresponding DOM fields to back them up."
+base-01,clean,C6,hybrid,static,FAIL,85,"VERDICT: FAIL
+CONFIDENCE: 85
+REASON: The primary CTA button ""Visit Us on Walnut Street"" is located in the hero section which has 80px padding and contains a large 2.8em heading, 1.3em subtitle, and margins totaling approximately 60px before the button appears, making it highly likely to be pushed below the fold on most mobile viewports in first-screen view."
+base-01,clean,C6,hybrid,grounded,PASS,85,"VERDICT: PASS
+CONFIDENCE: 85
+REASON: The primary CTA button ""Visit Us on Walnut Street"" is present in the mobile first-screen viewport (top: 553.28125) and while partially occluded by a container div, it is not fully obscured and remains visible and clickable to users."
+base-01,mutated,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a properly formatted viewport meta tag (`<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">`) in the head section for mobile responsiveness."
+base-01,mutated,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-01,mutated,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button in the hero section uses ""Visit Us on Walnut Street"" which is action-oriented and specific, not a generic label like ""Submit"" or ""Click here""."
+base-01,mutated,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Visit Us on Walnut Street"" which is action-oriented and specific, clearly avoiding generic labels like 'Submit' or 'Click here'."
+base-01,mutated,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Where Every Card Tells a Story and Every Gift Feels Personal"" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
+base-01,mutated,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Where Every Card Tells a Story and Every Gift Feels Personal"" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
+base-01,mutated,C4,hybrid,static,FAIL,100,"VERDICT: FAIL
+CONFIDENCE: 100
+REASON: The testimonials section has inline style `height:0;overflow:hidden` which completely hides all testimonial content from normal visitors despite being present in the DOM."
+base-01,mutated,C4,hybrid,grounded,FAIL,100,"VERDICT: FAIL
+CONFIDENCE: 100
+REASON: The testimonials section has `style=""height:0;overflow:hidden""` which makes all testimonial content invisible to normal visitors despite being present in the DOM, as confirmed by the browser observations showing all testimonial elements are ""user_visible: false"" with ""child clipped by ancestor overflow:hidden""."
+base-01,mutated,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so the criterion is satisfied by absence of such claims."
+base-01,mutated,C5,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The testimonials section header ""What Our Neighbors Are Saying"" claims reviews are shown below, but the entire section has `style=""height:0;overflow:hidden""` making all testimonial content invisible to users despite being in the DOM."
+base-01,mutated,C6,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The primary CTA button ""Visit Us on Walnut Street"" in the hero section is positioned below a large heading (2.8em font) and subtitle (1.3em font) with 80px top padding, which on typical mobile viewports (especially considering the header above it) would push the CTA below the first-screen viewport, requiring users to scroll to see it."
+base-01,mutated,C6,hybrid,grounded,PASS,85,"VERDICT: PASS
+CONFIDENCE: 85
+REASON: The primary CTA ""Visit Us on Walnut Street"" is visible in the mobile first-screen viewport (top: 553.28125) and while partially occluded by 4 points from a container div, it is not fully obscured and remains functionally visible to users."
+base-02,clean,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section for mobile responsiveness."
+base-02,clean,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-02,clean,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Visit Us Today"" which is action-oriented and specific to the business context, rather than a generic label like ""Submit"" or ""Click here""."
+base-02,clean,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Visit Us Today"" which is action-oriented and specific to the business goal, rather than a generic label like ""Submit"" or ""Click here""."
+base-02,clean,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside"" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
+base-02,clean,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside"" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
+base-02,clean,C4,hybrid,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The testimonial section is fully visible with proper styling (background color #3d3026, color #e8dcc4, padding 50px 20px) and contains three complete testimonials with quoted text and author attributions that are rendered without any display-hiding CSS properties."
+base-02,clean,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The browser observations confirm that multiple testimonial elements are present in the DOM, selector_visible is true, user_visible is true, have no clip_reasons, and have substantial box_area values (ranging from ~7k to ~461k pixels), demonstrating that testimonial/trust content is actually visible to normal visitors."
+base-02,clean,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so there are no such claims to verify against the DOM."
+base-02,clean,C5,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below"" that would require corresponding DOM fields to validate."
+base-02,clean,C6,hybrid,static,FAIL,85,"VERDICT: FAIL
+CONFIDENCE: 85
+REASON: The primary CTA button ""Visit Us Today"" is located in the header which has 60px padding and contains a large multi-line h1 (font-size 2.5em/1.8em on mobile) plus tagline text above it, making it highly likely to be pushed below the fold on typical mobile viewports (especially considering the common 667px-844px height range of mobile devices)."
+base-02,clean,C6,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button ""Visit Us Today"" is located at top: 314px in the mobile viewport, which is well within the first screen (typically 667-844px height on mobile devices), is not horizontally off-viewport, and has zero occluded points according to the browser observations."
+base-02,mutated,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section for mobile responsiveness."
+base-02,mutated,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and the browser observations confirm `""C1_viewport_meta"": true`."
+base-02,mutated,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Visit Us Today"" which is action-oriented and specific to the business context, rather than a generic label like ""Submit"" or ""Click here""."
+base-02,mutated,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Visit Us Today"" which is action-oriented and specific to the business context, not a generic label like 'Submit' or 'Click here'."
+base-02,mutated,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside"" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
+base-02,mutated,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The h1 headline ""Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside"" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
+base-02,mutated,C4,hybrid,static,PASS,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The accordion headers have `onclick=""event.stopPropagation()""` which prevents any click event from triggering the `toggleAccordion` function that is never actually called, and the testimonials are visible but the accordion functionality is broken, making the testimonial section the only trust content that is actually visible without requiring user interaction that doesn't work.
+
+Wait, let me reconsider - the testimonials themselves are fully visible without any interaction required, displayed in a clearly styled section with three customer testimonials showing names, quotes, and attributions.
+
+VERDICT: PASS
+CONFIDENCE: 90
+REASON: The testimonial section contains three customer testimonials that are fully visible on page load without requiring any user interaction, displayed with clear styling, quotes, and author attributions."
+base-02,mutated,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The browser observations confirm that multiple testimonial elements are present in the DOM, selector_visible is true, user_visible is true, have no clip_reasons, and have substantial box_area values (ranging from ~7k to ~90k pixels), demonstrating that testimonial/trust content is actually visible to normal visitors."
+base-02,mutated,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so there are no such claims to verify against the DOM."
+base-02,mutated,C5,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below"" that would require corresponding DOM fields to validate."
+base-02,mutated,C6,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The primary CTA button ""Visit Us Today"" is located in the header which has 60px padding and contains a large h1 (font-size 2.5em/1.8em on mobile), tagline text, and spacing that will push the button below the first-screen viewport on most mobile devices."
+base-02,mutated,C6,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button ""Visit Us Today"" is located at top: 314px in the mobile viewport, which is well within the first screen (typically 667-844px height on mobile devices), is not horizontally off-viewport, and has zero occluded points according to the browser observations."
+base-03,clean,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a properly formatted viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which enables mobile responsiveness."
+base-03,clean,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `""C1_viewport_meta"": true`."
+base-03,clean,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Schedule Your Consultation"" which is action-oriented and specific, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-03,clean,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Schedule Your Consultation"" which is action-oriented and specific, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-03,clean,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Where Distinguished Art Meets Masterful Framing"" clearly states a single value proposition (the combination of fine art and expert framing services) and contains no placeholder text."
+base-03,clean,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Where Distinguished Art Meets Masterful Framing"" clearly states a single value proposition (the combination of fine art and custom framing services) and contains no placeholder text."
+base-03,clean,C4,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The testimonials section is fully visible with proper styling (white text on dark background, adequate padding, readable font size) and contains three complete testimonials with quotes and author attributions that would be clearly visible to any normal visitor."
+base-03,clean,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The testimonials section is fully visible in the DOM with multiple testimonial elements confirmed as user_visible: true, displaying client quotes from Margaret Whitfield, Robert Chen, and David Kensington with substantial box areas and proper styling."
+base-03,clean,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The claim ""See our full artist roster below"" is backed by the presence of 12 artist cards in the DOM with names, media, and images displayed in the `.artist-roster` grid immediately following that statement."
+base-03,clean,C5,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The page contains the claim ""See our full artist roster below"" in the artist-intro paragraph, but this is a forward-looking claim about content that follows it (not content shown ""below"" in a verifiable comparison sense), and more critically, there are no other claims using the specific language ""shown below,"" ""comparable below,"" or ""verifiable below"" that would need DOM backing, making this criterion inapplicable or the single interpretable claim insufficiently backed by explicit verification mechanisms."
+base-03,clean,C6,hybrid,static,FAIL,85,"VERDICT: FAIL
+CONFIDENCE: 85
+REASON: The primary CTA button ""Schedule Your Consultation"" is located in the hero section which has 120px top/bottom padding plus header height (~63px), making it likely positioned below the fold on most mobile devices in portrait orientation (typically 667-844px height with ~375px width)."
+base-03,clean,C6,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The browser observations show ""C6_cta_mobile"": ""no CTA-like element matched"", indicating that the primary CTA button is not visible in the mobile first-screen viewport, likely because it appears below the fold after the large hero section with 120px padding."
+base-03,mutated,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which enables mobile responsiveness."
+base-03,mutated,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-03,mutated,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Schedule Your Consultation"" which is action-oriented and specific, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-03,mutated,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Schedule Your Consultation"" which is action-oriented and specific, not a generic label like ""Submit"" or ""Click here""."
+base-03,mutated,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Where Distinguished Art Meets Masterful Framing"" clearly states a single value proposition (the combination of fine art and expert framing services) and contains no placeholder text."
+base-03,mutated,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The h1 headline ""Where Distinguished Art Meets Masterful Framing"" clearly states a single value proposition (the combination of fine art and custom framing services) and contains no placeholder text."
+base-03,mutated,C4,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The testimonials section is fully visible with proper styling (white text on dark background, adequate padding, no display:none or visibility:hidden properties) and contains three complete client testimonials that would be clearly visible to a normal visitor."
+base-03,mutated,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The testimonials section is fully visible in the DOM with multiple testimonial elements confirmed as user_visible:true, displaying client quotes from Margaret Whitfield, Robert Chen, and David Kensington with substantial box areas and proper styling."
+base-03,mutated,C5,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The page claims ""See our full artist roster below"" but the artist roster is truncated with `max-height:200px;overflow:hidden` CSS, hiding most of the 12 artist cards and making the ""full"" roster claim unverifiable in the visible DOM."
+base-03,mutated,C5,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The page claims ""See our full artist roster below"" but the artist roster is clipped with `max-height:200px;overflow:hidden`, hiding 4344px of content (12 artists total with only ~2-3 visible), so the full roster is not actually shown/verifiable in the DOM as claimed."
+base-03,mutated,C6,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The primary CTA button ""Schedule Your Consultation"" is located in the hero section which has 120px top/bottom padding plus the header height, making it highly unlikely to be visible in the mobile first-screen viewport without scrolling on typical mobile devices."
+base-03,mutated,C6,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The browser observations show ""C6_cta_mobile"": ""no CTA-like element matched"", indicating the primary CTA button is not visible in the mobile first-screen viewport, likely because the hero section with padding: 120px pushes it below the fold on mobile devices."
+base-06,clean,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which enables mobile responsiveness."
+base-06,clean,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-06,clean,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: Both primary CTAs (""Commission Your Stationery"" and ""Schedule a Consultation"") use action-oriented, specific copy that clearly communicates the user action rather than generic labels like ""Submit"" or ""Click here""."
+base-06,clean,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA buttons use action-oriented copy ""Commission Your Stationery"" and ""Schedule a Consultation"" rather than generic labels like ""Submit"" or ""Click here""."
+base-06,clean,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Elevate Every Occasion with Hand-Crafted Elegance"" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
+base-06,clean,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Elevate Every Occasion with Hand-Crafted Elegance"" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
+base-06,clean,C4,hybrid,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The testimonials section is fully visible with proper styling (white background, padding of 70px, three testimonial cards with text and author names clearly displayed) and contains no CSS properties that would hide it from normal visitors."
+base-06,clean,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The browser observations confirm that all testimonial elements are present in the DOM, have `selector_visible: true` and `user_visible: true`, with no clipping reasons and substantial box areas, demonstrating that the testimonial/trust content is actually visible to normal visitors."
+base-06,clean,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so the criterion is satisfied by absence of such claims."
+base-06,clean,C5,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so there are no such claims to verify against the DOM."
+base-06,clean,C6,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button ""Commission Your Stationery"" is located in the hero section immediately below the header with padding of 80px top and 60px bottom, making it visible in the mobile first-screen viewport without requiring scrolling."
+base-06,clean,C6,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The browser observations explicitly report ""no CTA-like element matched"" for C6_cta_mobile, indicating the primary CTA button is not visible in the mobile first-screen viewport despite being present in the HTML."
+base-06,mutated,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which satisfies the criterion for mobile responsiveness."
+base-06,mutated,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-06,mutated,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA ""Commission Your Stationery"" in the hero section uses action-oriented, specific copy that clearly communicates what the user will do, avoiding generic labels like ""Submit"" or ""Click here."""
+base-06,mutated,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA ""Commission Your Stationery"" in the hero section uses action-oriented, specific copy that clearly describes what the user will do, avoiding generic labels like ""Submit"" or ""Click here""."
+base-06,mutated,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Elevate Every Occasion with Hand-Crafted Elegance"" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
+base-06,mutated,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Elevate Every Occasion with Hand-Crafted Elegance"" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
+base-06,mutated,C4,hybrid,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The testimonials section is fully visible with proper styling (white background, padding of 70px, three testimonial cards with visible text and author names) and contains no CSS properties that would hide it from normal visitors."
+base-06,mutated,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The browser observations confirm that all testimonial elements are present in the DOM, selector_visible is true, user_visible is true, with no clip_reasons, and substantial box_area values, demonstrating that the testimonial/trust content is actually visible to normal visitors."
+base-06,mutated,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims using language like ""shown below,"" ""comparable below,"" or ""verifiable below"" that would require corresponding DOM fields to validate."
+base-06,mutated,C5,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so there are no such claims to verify against the DOM."
+base-06,mutated,C6,hybrid,static,FAIL,85,"VERDICT: FAIL
+CONFIDENCE: 85
+REASON: The primary CTA button is positioned below an 80px padded hero section containing a 48px heading and 20px description text, which on typical mobile viewports (especially shorter ones like iPhone SE at 667px height) would likely push the button below the fold or make it only partially visible without scrolling."
+base-06,mutated,C6,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The browser observations show ""C6_cta_mobile"": ""no CTA-like element matched"", indicating that the primary CTA button is not visible in the mobile first-screen viewport despite being present in the HTML."
+base-07,clean,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which enables mobile responsiveness."
+base-07,clean,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and the browser observations confirm `""C1_viewport_meta"": true`."
+base-07,clean,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Come Play With Us!"" which is action-oriented and engaging, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-07,clean,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Come Play With Us!"" which is action-oriented and engaging, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-07,clean,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Rediscover the Magic of Wonder & Play"" clearly states a single value proposition (experiencing wonder and playfulness) and contains no placeholder text."
+base-07,clean,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Rediscover the Magic of Wonder & Play"" clearly states a single value proposition (experiencing wonder and playfulness) and contains no placeholder text."
+base-07,clean,C4,hybrid,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The testimonials section is fully visible with proper styling, containing three customer testimonial cards with star ratings, quotes, and author names displayed in a grid layout with no CSS hiding properties applied."
+base-07,clean,C4,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The browser observations confirm that testimonial content is present in the DOM, selector_visible is true, user_visible is true, has no clip_reasons, and has substantial box_area values, meaning the testimonials are actually visible to normal visitors."
+base-07,clean,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page makes no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below,"" so there are no such claims to verify against the DOM."
+base-07,clean,C5,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The page contains no claims that content is ""shown below,"" ""comparable below,"" or ""verifiable below"" that would require corresponding DOM fields to validate."
+base-07,clean,C6,hybrid,static,FAIL,85,"VERDICT: FAIL
+CONFIDENCE: 85
+REASON: The primary CTA button ""Come Play With Us!"" is positioned below a large hero heading (3em/2em on mobile), subtitle text, and decorative SVG background, which combined with the header will likely push it below the fold on most mobile devices' first-screen viewport."
+base-07,clean,C6,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The browser observations show ""C6_cta_mobile"": ""no CTA-like element matched"", indicating that the primary CTA button is not visible in the mobile first-screen viewport."
+base-07,mutated,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which enables mobile responsiveness."
+base-07,mutated,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and the browser observations confirm `""C1_viewport_meta"": true`."
+base-07,mutated,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Come Play With Us!"" which is action-oriented and engaging, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-07,mutated,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Come Play With Us!"" which is action-oriented and engaging, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-07,mutated,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Rediscover the Magic of Wonder & Play"" clearly states a single value proposition (the store offers a magical, playful experience) and contains no placeholder text."
+base-07,mutated,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Rediscover the Magic of Wonder & Play"" clearly states a single value proposition (the store offers a magical, playful experience) and contains no placeholder text."
+base-07,mutated,C4,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The press badge testimonial has `transform:scale(0)` inline style which makes it invisible (scaled to zero size), and while three customer testimonials are present and visible in the testimonials section, the criterion requires testimonial/trust content to be ""actually VISIBLE"" and the scaled-to-zero press badge violates this for at least part of the trust content."
+base-07,mutated,C4,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The browser observations confirm that multiple testimonial elements are present in the DOM with `user_visible: true` and substantial `box_area` values, indicating the testimonial section with customer reviews is actually visible to normal visitors, while the press badge is correctly identified as hidden due to `transform:scale(0)`."
+base-07,mutated,C5,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The press badge claims ""As Featured in Pittsburgh Magazine"" but is hidden with `transform:scale(0)`, making it invisible and not actually verifiable in the rendered DOM as the criterion requires."
+base-07,mutated,C5,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The press badge claiming ""As Featured in Pittsburgh Magazine"" is rendered invisible (transform:scale(0)) and therefore not actually shown/verifiable to users as claimed by its presence in the DOM."
+base-07,mutated,C6,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The press badge element has `transform:scale(0)` inline style which makes it invisible, and on mobile viewports the hero section's padding (60px top) combined with the header, large heading, subtitle, and CTA button likely pushes the primary CTA below the first-screen viewport."
+base-07,mutated,C6,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The browser observations show ""C6_cta_mobile"": ""no CTA-like element matched"", indicating the primary CTA button is not visible in the mobile first-screen viewport."
+base-08,clean,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a properly formatted viewport meta tag (`<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">`) in the head section for mobile responsiveness."
+base-08,clean,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-08,clean,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button in the hero section uses ""Visit Our Boutique Today"" which is action-oriented and specific, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-08,clean,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: Both primary CTAs use action-oriented copy (""Visit Our Boutique Today"" and ""Plan Your Visit"") rather than generic labels like ""Submit"" or ""Click here""."
+base-08,clean,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Discover Extraordinary Gifts That Transform Houses into Homes"" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
+base-08,clean,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Discover Extraordinary Gifts That Transform Houses into Homes"" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
+base-08,clean,C4,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The testimonial section with customer quote from Margaret Chen is clearly visible in the DOM with proper styling (white text on green gradient background, adequate padding and font sizing) and no CSS properties that would hide it from normal visitors."
+base-08,clean,C4,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The browser observations confirm that testimonial content is present in the DOM with `user_visible: true`, `selector_visible: true`, no clipping reasons, and substantial box areas (largest being 251,629 pixels), demonstrating the testimonial section is actually visible to normal visitors."
+base-08,clean,C5,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The claim ""see credentials below"" in the credentials-intro section is backed by the credentials-grid section immediately following it, which contains six credential cards displaying certification information in the DOM."
+base-08,clean,C5,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The claim ""see credentials below"" in the credentials-intro section is backed by the credentials-grid section immediately following it in the DOM, which contains six visible credential cards with specific dealer/partner information."
+base-08,clean,C6,hybrid,static,FAIL,85,"VERDICT: FAIL
+CONFIDENCE: 85
+REASON: The primary CTA button appears below a large heading (h1 with font-size 2.5em/1.8em mobile) and 80px/50px hero padding, which on most mobile viewports will push the button below the first-screen fold, making it not visible without scrolling."
+base-08,clean,C6,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The primary CTA ""VISIT OUR BOUTIQUE TODAY"" is positioned at top: 404.96875px, which is within the mobile first-screen viewport, and the observations confirm it is ""in_first_screen"": true with no occlusion."
+base-08,mutated,C1,mechanical,static,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes a viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, which satisfies the criterion for mobile responsiveness."
+base-08,mutated,C1,mechanical,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The page includes the required viewport meta tag `<meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
+base-08,mutated,C2,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The primary CTA button uses ""Visit Our Boutique Today"" which is action-oriented and specific, clearly avoiding generic labels like ""Submit"" or ""Click here""."
+base-08,mutated,C2,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: Both primary CTAs (""Visit Our Boutique Today"" and ""Plan Your Visit"") use action-oriented, specific copy that clearly communicates what the user will do, rather than generic labels like ""Submit"" or ""Click here""."
+base-08,mutated,C3,semantic,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Discover Extraordinary Gifts That Transform Houses into Homes"" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
+base-08,mutated,C3,semantic,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The headline ""Discover Extraordinary Gifts That Transform Houses into Homes"" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
+base-08,mutated,C4,hybrid,static,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The testimonial section with customer quote from Margaret Chen is clearly visible in the DOM with proper styling (white text on green gradient background, centered, with adequate padding) and no CSS rules hiding or obscuring it from normal visitors."
+base-08,mutated,C4,hybrid,grounded,PASS,95,"VERDICT: PASS
+CONFIDENCE: 95
+REASON: The browser observations confirm that testimonial content is present in the DOM with `user_visible: true`, `selector_visible: true`, no clipping reasons, and substantial box areas (largest being 251,629 pixels), demonstrating the testimonial section is actually visible to normal visitors."
+base-08,mutated,C5,hybrid,static,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The page claims ""see credentials below"" but the credentials grid contains only empty divs with no actual credential names, issuers, or any verifiable content in the DOM."
+base-08,mutated,C5,hybrid,grounded,FAIL,95,"VERDICT: FAIL
+CONFIDENCE: 95
+REASON: The page claims ""see credentials below"" but the credentials section contains only empty divs with no actual credential names, issuers, or any verifiable content in the DOM."
+base-08,mutated,C6,hybrid,static,FAIL,85,"VERDICT: FAIL
+CONFIDENCE: 85
+REASON: The primary CTA button is positioned below a large h1 heading (font-size: 2.5em on desktop, 1.8em on mobile) with significant padding (80px on desktop, 50px on mobile) in the hero section, making it highly unlikely to be visible in the mobile first-screen viewport without scrolling."
+base-08,mutated,C6,hybrid,grounded,PASS,100,"VERDICT: PASS
+CONFIDENCE: 100
+REASON: The primary CTA ""VISIT OUR BOUTIQUE TODAY"" is positioned at top: 404.96875px and marked as ""in_first_screen"": true with no occlusion, making it visible in the mobile first-screen viewport."

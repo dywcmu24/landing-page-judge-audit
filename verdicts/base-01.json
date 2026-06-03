@@ -6,7 +6,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which satisfies the criterion for mobile responsiveness."
   },
   {
     "base": "base-01",
@@ -15,7 +16,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-01",
@@ -24,7 +26,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button in the hero section uses \"Visit Us on Walnut Street\" which is action-oriented and specific, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-01",
@@ -33,7 +36,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Visit Us on Walnut Street\" which is action-oriented and specific, clearly avoiding generic labels like 'Submit' or 'Click here'."
   },
   {
     "base": "base-01",
@@ -42,7 +46,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Where Every Card Tells a Story and Every Gift Feels Personal\" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
   },
   {
     "base": "base-01",
@@ -51,7 +56,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Where Every Card Tells a Story and Every Gift Feels Personal\" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
   },
   {
     "base": "base-01",
@@ -60,7 +66,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The testimonials section is fully visible with proper styling (white text on teal background, no display:none or visibility:hidden, no zero opacity, positioned normally in the document flow) and contains three customer testimonials with names and locations."
   },
   {
     "base": "base-01",
@@ -69,7 +76,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The testimonials section is present in the DOM with multiple testimonial cards that are all marked as user_visible: true, selector_visible: true, with substantial box areas (>100k pixels), no clipping reasons, and visible styling (white text on teal background), confirming they are actually visible to normal visitors."
   },
   {
     "base": "base-01",
@@ -78,7 +86,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so the criterion is satisfied by absence of such claims."
   },
   {
     "base": "base-01",
@@ -87,7 +96,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims using language like \"shown below,\" \"comparable below,\" or \"verifiable below\" that would require corresponding DOM fields to back them up."
   },
   {
     "base": "base-01",
@@ -96,7 +106,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 85\nREASON: The primary CTA button \"Visit Us on Walnut Street\" is located in the hero section which has 80px padding and contains a large 2.8em heading, 1.3em subtitle, and margins totaling approximately 60px before the button appears, making it highly likely to be pushed below the fold on most mobile viewports in first-screen view."
   },
   {
     "base": "base-01",
@@ -105,7 +116,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 85\nREASON: The primary CTA button \"Visit Us on Walnut Street\" is present in the mobile first-screen viewport (top: 553.28125) and while partially occluded by a container div, it is not fully obscured and remains visible and clickable to users."
   },
   {
     "base": "base-01",
@@ -114,7 +126,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a properly formatted viewport meta tag (`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`) in the head section for mobile responsiveness."
   },
   {
     "base": "base-01",
@@ -123,7 +136,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-01",
@@ -132,7 +146,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button in the hero section uses \"Visit Us on Walnut Street\" which is action-oriented and specific, not a generic label like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-01",
@@ -141,7 +156,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Visit Us on Walnut Street\" which is action-oriented and specific, clearly avoiding generic labels like 'Submit' or 'Click here'."
   },
   {
     "base": "base-01",
@@ -150,7 +166,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Where Every Card Tells a Story and Every Gift Feels Personal\" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
   },
   {
     "base": "base-01",
@@ -159,7 +176,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Where Every Card Tells a Story and Every Gift Feels Personal\" clearly states a single value proposition (personalized, meaningful cards and gifts) and contains no placeholder text."
   },
   {
     "base": "base-01",
@@ -168,7 +186,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 100\nREASON: The testimonials section has inline style `height:0;overflow:hidden` which completely hides all testimonial content from normal visitors despite being present in the DOM."
   },
   {
     "base": "base-01",
@@ -177,7 +196,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 100\nREASON: The testimonials section has `style=\"height:0;overflow:hidden\"` which makes all testimonial content invisible to normal visitors despite being present in the DOM, as confirmed by the browser observations showing all testimonial elements are \"user_visible: false\" with \"child clipped by ancestor overflow:hidden\"."
   },
   {
     "base": "base-01",
@@ -186,7 +206,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so the criterion is satisfied by absence of such claims."
   },
   {
     "base": "base-01",
@@ -195,7 +216,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The testimonials section header \"What Our Neighbors Are Saying\" claims reviews are shown below, but the entire section has `style=\"height:0;overflow:hidden\"` making all testimonial content invisible to users despite being in the DOM."
   },
   {
     "base": "base-01",
@@ -204,7 +226,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The primary CTA button \"Visit Us on Walnut Street\" in the hero section is positioned below a large heading (2.8em font) and subtitle (1.3em font) with 80px top padding, which on typical mobile viewports (especially considering the header above it) would push the CTA below the first-screen viewport, requiring users to scroll to see it."
   },
   {
     "base": "base-01",
@@ -213,6 +236,7 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 85\nREASON: The primary CTA \"Visit Us on Walnut Street\" is visible in the mobile first-screen viewport (top: 553.28125) and while partially occluded by 4 points from a container div, it is not fully obscured and remains functionally visible to users."
   }
 ]

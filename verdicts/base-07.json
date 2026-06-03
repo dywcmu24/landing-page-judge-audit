@@ -6,7 +6,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which enables mobile responsiveness."
   },
   {
     "base": "base-07",
@@ -15,7 +16,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and the browser observations confirm `\"C1_viewport_meta\": true`."
   },
   {
     "base": "base-07",
@@ -24,7 +26,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Come Play With Us!\" which is action-oriented and engaging, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-07",
@@ -33,7 +36,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Come Play With Us!\" which is action-oriented and engaging, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-07",
@@ -42,7 +46,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Rediscover the Magic of Wonder & Play\" clearly states a single value proposition (experiencing wonder and playfulness) and contains no placeholder text."
   },
   {
     "base": "base-07",
@@ -51,7 +56,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Rediscover the Magic of Wonder & Play\" clearly states a single value proposition (experiencing wonder and playfulness) and contains no placeholder text."
   },
   {
     "base": "base-07",
@@ -60,7 +66,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The testimonials section is fully visible with proper styling, containing three customer testimonial cards with star ratings, quotes, and author names displayed in a grid layout with no CSS hiding properties applied."
   },
   {
     "base": "base-07",
@@ -69,7 +76,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The browser observations confirm that testimonial content is present in the DOM, selector_visible is true, user_visible is true, has no clip_reasons, and has substantial box_area values, meaning the testimonials are actually visible to normal visitors."
   },
   {
     "base": "base-07",
@@ -78,7 +86,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page makes no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so there are no such claims to verify against the DOM."
   },
   {
     "base": "base-07",
@@ -87,7 +96,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below\" that would require corresponding DOM fields to validate."
   },
   {
     "base": "base-07",
@@ -96,7 +106,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 85\nREASON: The primary CTA button \"Come Play With Us!\" is positioned below a large hero heading (3em/2em on mobile), subtitle text, and decorative SVG background, which combined with the header will likely push it below the fold on most mobile devices' first-screen viewport."
   },
   {
     "base": "base-07",
@@ -105,7 +116,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The browser observations show \"C6_cta_mobile\": \"no CTA-like element matched\", indicating that the primary CTA button is not visible in the mobile first-screen viewport."
   },
   {
     "base": "base-07",
@@ -114,7 +126,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which enables mobile responsiveness."
   },
   {
     "base": "base-07",
@@ -123,7 +136,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and the browser observations confirm `\"C1_viewport_meta\": true`."
   },
   {
     "base": "base-07",
@@ -132,7 +146,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Come Play With Us!\" which is action-oriented and engaging, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-07",
@@ -141,7 +156,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Come Play With Us!\" which is action-oriented and engaging, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-07",
@@ -150,7 +166,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Rediscover the Magic of Wonder & Play\" clearly states a single value proposition (the store offers a magical, playful experience) and contains no placeholder text."
   },
   {
     "base": "base-07",
@@ -159,7 +176,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Rediscover the Magic of Wonder & Play\" clearly states a single value proposition (the store offers a magical, playful experience) and contains no placeholder text."
   },
   {
     "base": "base-07",
@@ -168,7 +186,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The press badge testimonial has `transform:scale(0)` inline style which makes it invisible (scaled to zero size), and while three customer testimonials are present and visible in the testimonials section, the criterion requires testimonial/trust content to be \"actually VISIBLE\" and the scaled-to-zero press badge violates this for at least part of the trust content."
   },
   {
     "base": "base-07",
@@ -177,7 +196,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The browser observations confirm that multiple testimonial elements are present in the DOM with `user_visible: true` and substantial `box_area` values, indicating the testimonial section with customer reviews is actually visible to normal visitors, while the press badge is correctly identified as hidden due to `transform:scale(0)`."
   },
   {
     "base": "base-07",
@@ -186,7 +206,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The press badge claims \"As Featured in Pittsburgh Magazine\" but is hidden with `transform:scale(0)`, making it invisible and not actually verifiable in the rendered DOM as the criterion requires."
   },
   {
     "base": "base-07",
@@ -195,7 +216,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The press badge claiming \"As Featured in Pittsburgh Magazine\" is rendered invisible (transform:scale(0)) and therefore not actually shown/verifiable to users as claimed by its presence in the DOM."
   },
   {
     "base": "base-07",
@@ -204,7 +226,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The press badge element has `transform:scale(0)` inline style which makes it invisible, and on mobile viewports the hero section's padding (60px top) combined with the header, large heading, subtitle, and CTA button likely pushes the primary CTA below the first-screen viewport."
   },
   {
     "base": "base-07",
@@ -213,6 +236,7 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The browser observations show \"C6_cta_mobile\": \"no CTA-like element matched\", indicating the primary CTA button is not visible in the mobile first-screen viewport."
   }
 ]

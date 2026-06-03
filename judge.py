@@ -70,7 +70,8 @@ for variant in ["clean", "mutated"]:
             rows.append({"base":base_id,"variant":variant,"criterion":crit["id"],
                          "ownership":crit["ownership"],
                          "packet":"grounded" if grounded else "static",
-                         "verdict":v,"confidence":c})
+                         "verdict":v,"confidence":c,
+                         "rationale":raw})
             print(f"{variant:8} {crit['id']} {crit['ownership']:10} "
                   f"{'grounded' if grounded else 'static  '} -> {v} ({c})")
 

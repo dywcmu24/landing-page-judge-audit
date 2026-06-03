@@ -6,7 +6,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a properly formatted viewport meta tag (`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">`) in the head section for mobile responsiveness."
   },
   {
     "base": "base-08",
@@ -15,7 +16,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-08",
@@ -24,7 +26,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button in the hero section uses \"Visit Our Boutique Today\" which is action-oriented and specific, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-08",
@@ -33,7 +36,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: Both primary CTAs use action-oriented copy (\"Visit Our Boutique Today\" and \"Plan Your Visit\") rather than generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-08",
@@ -42,7 +46,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Discover Extraordinary Gifts That Transform Houses into Homes\" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
   },
   {
     "base": "base-08",
@@ -51,7 +56,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Discover Extraordinary Gifts That Transform Houses into Homes\" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
   },
   {
     "base": "base-08",
@@ -60,7 +66,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The testimonial section with customer quote from Margaret Chen is clearly visible in the DOM with proper styling (white text on green gradient background, adequate padding and font sizing) and no CSS properties that would hide it from normal visitors."
   },
   {
     "base": "base-08",
@@ -69,7 +76,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The browser observations confirm that testimonial content is present in the DOM with `user_visible: true`, `selector_visible: true`, no clipping reasons, and substantial box areas (largest being 251,629 pixels), demonstrating the testimonial section is actually visible to normal visitors."
   },
   {
     "base": "base-08",
@@ -78,7 +86,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The claim \"see credentials below\" in the credentials-intro section is backed by the credentials-grid section immediately following it, which contains six credential cards displaying certification information in the DOM."
   },
   {
     "base": "base-08",
@@ -87,7 +96,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The claim \"see credentials below\" in the credentials-intro section is backed by the credentials-grid section immediately following it in the DOM, which contains six visible credential cards with specific dealer/partner information."
   },
   {
     "base": "base-08",
@@ -96,7 +106,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 85\nREASON: The primary CTA button appears below a large heading (h1 with font-size 2.5em/1.8em mobile) and 80px/50px hero padding, which on most mobile viewports will push the button below the first-screen fold, making it not visible without scrolling."
   },
   {
     "base": "base-08",
@@ -105,7 +116,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The primary CTA \"VISIT OUR BOUTIQUE TODAY\" is positioned at top: 404.96875px, which is within the mobile first-screen viewport, and the observations confirm it is \"in_first_screen\": true with no occlusion."
   },
   {
     "base": "base-08",
@@ -114,7 +126,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which satisfies the criterion for mobile responsiveness."
   },
   {
     "base": "base-08",
@@ -123,7 +136,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-08",
@@ -132,7 +146,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Visit Our Boutique Today\" which is action-oriented and specific, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-08",
@@ -141,7 +156,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: Both primary CTAs (\"Visit Our Boutique Today\" and \"Plan Your Visit\") use action-oriented, specific copy that clearly communicates what the user will do, rather than generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-08",
@@ -150,7 +166,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Discover Extraordinary Gifts That Transform Houses into Homes\" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
   },
   {
     "base": "base-08",
@@ -159,7 +176,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Discover Extraordinary Gifts That Transform Houses into Homes\" clearly states a single value proposition (curated gifts that elevate home living) and contains no placeholder text."
   },
   {
     "base": "base-08",
@@ -168,7 +186,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The testimonial section with customer quote from Margaret Chen is clearly visible in the DOM with proper styling (white text on green gradient background, centered, with adequate padding) and no CSS rules hiding or obscuring it from normal visitors."
   },
   {
     "base": "base-08",
@@ -177,7 +196,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The browser observations confirm that testimonial content is present in the DOM with `user_visible: true`, `selector_visible: true`, no clipping reasons, and substantial box areas (largest being 251,629 pixels), demonstrating the testimonial section is actually visible to normal visitors."
   },
   {
     "base": "base-08",
@@ -186,7 +206,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The page claims \"see credentials below\" but the credentials grid contains only empty divs with no actual credential names, issuers, or any verifiable content in the DOM."
   },
   {
     "base": "base-08",
@@ -195,7 +216,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The page claims \"see credentials below\" but the credentials section contains only empty divs with no actual credential names, issuers, or any verifiable content in the DOM."
   },
   {
     "base": "base-08",
@@ -204,7 +226,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 85\nREASON: The primary CTA button is positioned below a large h1 heading (font-size: 2.5em on desktop, 1.8em on mobile) with significant padding (80px on desktop, 50px on mobile) in the hero section, making it highly unlikely to be visible in the mobile first-screen viewport without scrolling."
   },
   {
     "base": "base-08",
@@ -213,6 +236,7 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The primary CTA \"VISIT OUR BOUTIQUE TODAY\" is positioned at top: 404.96875px and marked as \"in_first_screen\": true with no occlusion, making it visible in the mobile first-screen viewport."
   }
 ]

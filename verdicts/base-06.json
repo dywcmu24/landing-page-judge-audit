@@ -6,7 +6,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which enables mobile responsiveness."
   },
   {
     "base": "base-06",
@@ -15,7 +16,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-06",
@@ -24,7 +26,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: Both primary CTAs (\"Commission Your Stationery\" and \"Schedule a Consultation\") use action-oriented, specific copy that clearly communicates the user action rather than generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-06",
@@ -33,7 +36,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA buttons use action-oriented copy \"Commission Your Stationery\" and \"Schedule a Consultation\" rather than generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-06",
@@ -42,7 +46,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Elevate Every Occasion with Hand-Crafted Elegance\" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
   },
   {
     "base": "base-06",
@@ -51,7 +56,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Elevate Every Occasion with Hand-Crafted Elegance\" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
   },
   {
     "base": "base-06",
@@ -60,7 +66,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The testimonials section is fully visible with proper styling (white background, padding of 70px, three testimonial cards with text and author names clearly displayed) and contains no CSS properties that would hide it from normal visitors."
   },
   {
     "base": "base-06",
@@ -69,7 +76,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The browser observations confirm that all testimonial elements are present in the DOM, have `selector_visible: true` and `user_visible: true`, with no clipping reasons and substantial box areas, demonstrating that the testimonial/trust content is actually visible to normal visitors."
   },
   {
     "base": "base-06",
@@ -78,7 +86,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so the criterion is satisfied by absence of such claims."
   },
   {
     "base": "base-06",
@@ -87,7 +96,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so there are no such claims to verify against the DOM."
   },
   {
     "base": "base-06",
@@ -96,7 +106,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button \"Commission Your Stationery\" is located in the hero section immediately below the header with padding of 80px top and 60px bottom, making it visible in the mobile first-screen viewport without requiring scrolling."
   },
   {
     "base": "base-06",
@@ -105,7 +116,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The browser observations explicitly report \"no CTA-like element matched\" for C6_cta_mobile, indicating the primary CTA button is not visible in the mobile first-screen viewport despite being present in the HTML."
   },
   {
     "base": "base-06",
@@ -114,7 +126,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which satisfies the criterion for mobile responsiveness."
   },
   {
     "base": "base-06",
@@ -123,7 +136,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-06",
@@ -132,7 +146,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA \"Commission Your Stationery\" in the hero section uses action-oriented, specific copy that clearly communicates what the user will do, avoiding generic labels like \"Submit\" or \"Click here.\""
   },
   {
     "base": "base-06",
@@ -141,7 +156,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA \"Commission Your Stationery\" in the hero section uses action-oriented, specific copy that clearly describes what the user will do, avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-06",
@@ -150,7 +166,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Elevate Every Occasion with Hand-Crafted Elegance\" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
   },
   {
     "base": "base-06",
@@ -159,7 +176,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Elevate Every Occasion with Hand-Crafted Elegance\" clearly states a single value proposition (hand-crafted elegance for special occasions) and contains no placeholder text."
   },
   {
     "base": "base-06",
@@ -168,7 +186,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The testimonials section is fully visible with proper styling (white background, padding of 70px, three testimonial cards with visible text and author names) and contains no CSS properties that would hide it from normal visitors."
   },
   {
     "base": "base-06",
@@ -177,7 +196,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The browser observations confirm that all testimonial elements are present in the DOM, selector_visible is true, user_visible is true, with no clip_reasons, and substantial box_area values, demonstrating that the testimonial/trust content is actually visible to normal visitors."
   },
   {
     "base": "base-06",
@@ -186,7 +206,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims using language like \"shown below,\" \"comparable below,\" or \"verifiable below\" that would require corresponding DOM fields to validate."
   },
   {
     "base": "base-06",
@@ -195,7 +216,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so there are no such claims to verify against the DOM."
   },
   {
     "base": "base-06",
@@ -204,7 +226,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 85\nREASON: The primary CTA button is positioned below an 80px padded hero section containing a 48px heading and 20px description text, which on typical mobile viewports (especially shorter ones like iPhone SE at 667px height) would likely push the button below the fold or make it only partially visible without scrolling."
   },
   {
     "base": "base-06",
@@ -213,6 +236,7 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The browser observations show \"C6_cta_mobile\": \"no CTA-like element matched\", indicating that the primary CTA button is not visible in the mobile first-screen viewport despite being present in the HTML."
   }
 ]

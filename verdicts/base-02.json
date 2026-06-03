@@ -6,7 +6,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section for mobile responsiveness."
   },
   {
     "base": "base-02",
@@ -15,7 +16,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-02",
@@ -24,7 +26,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Visit Us Today\" which is action-oriented and specific to the business context, rather than a generic label like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-02",
@@ -33,7 +36,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Visit Us Today\" which is action-oriented and specific to the business goal, rather than a generic label like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-02",
@@ -42,7 +46,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside\" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
   },
   {
     "base": "base-02",
@@ -51,7 +56,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside\" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
   },
   {
     "base": "base-02",
@@ -60,7 +66,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The testimonial section is fully visible with proper styling (background color #3d3026, color #e8dcc4, padding 50px 20px) and contains three complete testimonials with quoted text and author attributions that are rendered without any display-hiding CSS properties."
   },
   {
     "base": "base-02",
@@ -69,7 +76,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The browser observations confirm that multiple testimonial elements are present in the DOM, selector_visible is true, user_visible is true, have no clip_reasons, and have substantial box_area values (ranging from ~7k to ~461k pixels), demonstrating that testimonial/trust content is actually visible to normal visitors."
   },
   {
     "base": "base-02",
@@ -78,7 +86,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so there are no such claims to verify against the DOM."
   },
   {
     "base": "base-02",
@@ -87,7 +96,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below\" that would require corresponding DOM fields to validate."
   },
   {
     "base": "base-02",
@@ -96,7 +106,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 85\nREASON: The primary CTA button \"Visit Us Today\" is located in the header which has 60px padding and contains a large multi-line h1 (font-size 2.5em/1.8em on mobile) plus tagline text above it, making it highly likely to be pushed below the fold on typical mobile viewports (especially considering the common 667px-844px height range of mobile devices)."
   },
   {
     "base": "base-02",
@@ -105,7 +116,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button \"Visit Us Today\" is located at top: 314px in the mobile viewport, which is well within the first screen (typically 667-844px height on mobile devices), is not horizontally off-viewport, and has zero occluded points according to the browser observations."
   },
   {
     "base": "base-02",
@@ -114,7 +126,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section for mobile responsiveness."
   },
   {
     "base": "base-02",
@@ -123,7 +136,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and the browser observations confirm `\"C1_viewport_meta\": true`."
   },
   {
     "base": "base-02",
@@ -132,7 +146,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Visit Us Today\" which is action-oriented and specific to the business context, rather than a generic label like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-02",
@@ -141,7 +156,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Visit Us Today\" which is action-oriented and specific to the business context, not a generic label like 'Submit' or 'Click here'."
   },
   {
     "base": "base-02",
@@ -150,7 +166,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside\" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
   },
   {
     "base": "base-02",
@@ -159,7 +176,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The h1 headline \"Discover Thoughtfully Curated Books & Vinyl in the Heart of Shadyside\" clearly states a single value proposition (curated books and vinyl in Shadyside) and contains no placeholder text."
   },
   {
     "base": "base-02",
@@ -168,7 +186,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The accordion headers have `onclick=\"event.stopPropagation()\"` which prevents any click event from triggering the `toggleAccordion` function that is never actually called, and the testimonials are visible but the accordion functionality is broken, making the testimonial section the only trust content that is actually visible without requiring user interaction that doesn't work.\n\nWait, let me reconsider - the testimonials themselves are fully visible without any interaction required, displayed in a clearly styled section with three customer testimonials showing names, quotes, and attributions.\n\nVERDICT: PASS\nCONFIDENCE: 90\nREASON: The testimonial section contains three customer testimonials that are fully visible on page load without requiring any user interaction, displayed with clear styling, quotes, and author attributions."
   },
   {
     "base": "base-02",
@@ -177,7 +196,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The browser observations confirm that multiple testimonial elements are present in the DOM, selector_visible is true, user_visible is true, have no clip_reasons, and have substantial box_area values (ranging from ~7k to ~90k pixels), demonstrating that testimonial/trust content is actually visible to normal visitors."
   },
   {
     "base": "base-02",
@@ -186,7 +206,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below,\" so there are no such claims to verify against the DOM."
   },
   {
     "base": "base-02",
@@ -195,7 +216,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The page contains no claims that content is \"shown below,\" \"comparable below,\" or \"verifiable below\" that would require corresponding DOM fields to validate."
   },
   {
     "base": "base-02",
@@ -204,7 +226,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The primary CTA button \"Visit Us Today\" is located in the header which has 60px padding and contains a large h1 (font-size 2.5em/1.8em on mobile), tagline text, and spacing that will push the button below the first-screen viewport on most mobile devices."
   },
   {
     "base": "base-02",
@@ -213,6 +236,7 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button \"Visit Us Today\" is located at top: 314px in the mobile viewport, which is well within the first screen (typically 667-844px height on mobile devices), is not horizontally off-viewport, and has zero occluded points according to the browser observations."
   }
 ]

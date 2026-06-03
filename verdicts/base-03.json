@@ -6,7 +6,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a properly formatted viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which enables mobile responsiveness."
   },
   {
     "base": "base-03",
@@ -15,7 +16,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `\"C1_viewport_meta\": true`."
   },
   {
     "base": "base-03",
@@ -24,7 +26,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Schedule Your Consultation\" which is action-oriented and specific, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-03",
@@ -33,7 +36,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Schedule Your Consultation\" which is action-oriented and specific, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-03",
@@ -42,7 +46,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Where Distinguished Art Meets Masterful Framing\" clearly states a single value proposition (the combination of fine art and expert framing services) and contains no placeholder text."
   },
   {
     "base": "base-03",
@@ -51,7 +56,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Where Distinguished Art Meets Masterful Framing\" clearly states a single value proposition (the combination of fine art and custom framing services) and contains no placeholder text."
   },
   {
     "base": "base-03",
@@ -60,7 +66,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The testimonials section is fully visible with proper styling (white text on dark background, adequate padding, readable font size) and contains three complete testimonials with quotes and author attributions that would be clearly visible to any normal visitor."
   },
   {
     "base": "base-03",
@@ -69,7 +76,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The testimonials section is fully visible in the DOM with multiple testimonial elements confirmed as user_visible: true, displaying client quotes from Margaret Whitfield, Robert Chen, and David Kensington with substantial box areas and proper styling."
   },
   {
     "base": "base-03",
@@ -78,7 +86,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The claim \"See our full artist roster below\" is backed by the presence of 12 artist cards in the DOM with names, media, and images displayed in the `.artist-roster` grid immediately following that statement."
   },
   {
     "base": "base-03",
@@ -87,7 +96,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The page contains the claim \"See our full artist roster below\" in the artist-intro paragraph, but this is a forward-looking claim about content that follows it (not content shown \"below\" in a verifiable comparison sense), and more critically, there are no other claims using the specific language \"shown below,\" \"comparable below,\" or \"verifiable below\" that would need DOM backing, making this criterion inapplicable or the single interpretable claim insufficiently backed by explicit verification mechanisms."
   },
   {
     "base": "base-03",
@@ -96,7 +106,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 85
+    "confidence": 85,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 85\nREASON: The primary CTA button \"Schedule Your Consultation\" is located in the hero section which has 120px top/bottom padding plus header height (~63px), making it likely positioned below the fold on most mobile devices in portrait orientation (typically 667-844px height with ~375px width)."
   },
   {
     "base": "base-03",
@@ -105,7 +116,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The browser observations show \"C6_cta_mobile\": \"no CTA-like element matched\", indicating that the primary CTA button is not visible in the mobile first-screen viewport, likely because it appears below the fold after the large hero section with 120px padding."
   },
   {
     "base": "base-03",
@@ -114,7 +126,8 @@
     "ownership": "mechanical",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes a viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, which enables mobile responsiveness."
   },
   {
     "base": "base-03",
@@ -123,7 +136,8 @@
     "ownership": "mechanical",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The page includes the required viewport meta tag `<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">` in the head section, and browser observations confirm `C1_viewport_meta: true`."
   },
   {
     "base": "base-03",
@@ -132,7 +146,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Schedule Your Consultation\" which is action-oriented and specific, clearly avoiding generic labels like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-03",
@@ -141,7 +156,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The primary CTA button uses \"Schedule Your Consultation\" which is action-oriented and specific, not a generic label like \"Submit\" or \"Click here\"."
   },
   {
     "base": "base-03",
@@ -150,7 +166,8 @@
     "ownership": "semantic",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The headline \"Where Distinguished Art Meets Masterful Framing\" clearly states a single value proposition (the combination of fine art and expert framing services) and contains no placeholder text."
   },
   {
     "base": "base-03",
@@ -159,7 +176,8 @@
     "ownership": "semantic",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The h1 headline \"Where Distinguished Art Meets Masterful Framing\" clearly states a single value proposition (the combination of fine art and custom framing services) and contains no placeholder text."
   },
   {
     "base": "base-03",
@@ -168,7 +186,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "PASS",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 95\nREASON: The testimonials section is fully visible with proper styling (white text on dark background, adequate padding, no display:none or visibility:hidden properties) and contains three complete client testimonials that would be clearly visible to a normal visitor."
   },
   {
     "base": "base-03",
@@ -177,7 +196,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "PASS",
-    "confidence": 100
+    "confidence": 100,
+    "rationale": "VERDICT: PASS\nCONFIDENCE: 100\nREASON: The testimonials section is fully visible in the DOM with multiple testimonial elements confirmed as user_visible:true, displaying client quotes from Margaret Whitfield, Robert Chen, and David Kensington with substantial box areas and proper styling."
   },
   {
     "base": "base-03",
@@ -186,7 +206,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The page claims \"See our full artist roster below\" but the artist roster is truncated with `max-height:200px;overflow:hidden` CSS, hiding most of the 12 artist cards and making the \"full\" roster claim unverifiable in the visible DOM."
   },
   {
     "base": "base-03",
@@ -195,7 +216,8 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The page claims \"See our full artist roster below\" but the artist roster is clipped with `max-height:200px;overflow:hidden`, hiding 4344px of content (12 artists total with only ~2-3 visible), so the full roster is not actually shown/verifiable in the DOM as claimed."
   },
   {
     "base": "base-03",
@@ -204,7 +226,8 @@
     "ownership": "hybrid",
     "packet": "static",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The primary CTA button \"Schedule Your Consultation\" is located in the hero section which has 120px top/bottom padding plus the header height, making it highly unlikely to be visible in the mobile first-screen viewport without scrolling on typical mobile devices."
   },
   {
     "base": "base-03",
@@ -213,6 +236,7 @@
     "ownership": "hybrid",
     "packet": "grounded",
     "verdict": "FAIL",
-    "confidence": 95
+    "confidence": 95,
+    "rationale": "VERDICT: FAIL\nCONFIDENCE: 95\nREASON: The browser observations show \"C6_cta_mobile\": \"no CTA-like element matched\", indicating the primary CTA button is not visible in the mobile first-screen viewport, likely because the hero section with padding: 120px pushes it below the fold on mobile devices."
   }
 ]
